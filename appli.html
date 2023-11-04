@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+  <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE-edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Responsive Login and Signup Page</title>
+        <script src="js/appli.js">
+            function auth(){
+                var email= document.getElementById("email").value;
+                var password=document.getElementById("password").value;
+                if(email=="admin@gmail.com" && password=="admin123"){
+                    document.getElementById("redirectButton").addEventListener("click", function()
+                     {
+                        window.location.href = "dashboard.com";
+                    });
+
+                }
+                else{
+                    alert("Invalid Information");
+                }
+            }
+        </script>
+        <style type="text/css">
+            .logo-image{
+                float: left;
+                width: 300%;
+                padding-left: 30px;
+            }
+            .form-content{
+                position: absolute;
+                left: 60%;
+                bottom: 20%;
+
+            }
+        </style>
+
+        <!--CSS-->
+        <link rel="stylesheet" type="text/css" href="invent.css">
+
+        <!--boxicons css-->
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    </head>
+    <body>
+            <div class="form_login">
+                <div class="logo-image">
+                    <img src="C:\Users\Ajay\Downloads\suchilogo.jpeg" alt="" class="logo-image">
+                </div>
+                <div class="form-content">
+                    <h1>Login to your account</h1>
+                    <form action="#">
+                        <div class="field input field">
+                            <input type="email" placeholder="email" class9="input" size="40px">
+                        </div>
+                        <div class="field input field">
+                            <input type="password" placeholder="Password" class9="password">
+                            <i class="bx bx-hide eye-icon"></i>
+                        </div>
+                        <div class="remember">
+                            <input type="checkbox" placeholder="checkbox" class="checkbox">
+                            <span>Remember for 30 Days</span>
+                        </div>
+                        <div class="form-link-1">
+                            <a href="#" class="forget-pass">Forget Password?</a>
+                        </div>
+                        <div class="field button field">
+                            <button value="sign in" id="redirectbutton" class="submit-btn" onclick="auth()">sign in</button>
+                        </div>
+                        <div class="media-options">
+                            <a href="https://myaccount.google.com/?utm_source=sign_in_no_continue&pli=1" class="field Google">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Google_%22G%22_Logo.svg/1200px-Google_%22G%22_Logo.svg.png" alt="" class="google-img">
+                            
+                            <span>Continue with Google</span>
+                        </a>
+                        </div>
+                        <div class="form-link-2">
+                            <span>Don't have an account? <a href="#" class="signup-link">Signup</a></span>
+                         </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </body>
+  </html>
