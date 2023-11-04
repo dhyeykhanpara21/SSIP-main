@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', 'Times New Roman', Times, serif;
+}
+
+.container_forms{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.form_login{
+    max-width: 430px;
+    width: 100%;
+    padding: 30px;
+    border-radius: 6px;
+}
+.logo-image{
+  background-position: left;
+  width: 135%;
+}
+h1{
+    text-align: center;
+    font-size: 30px;
+}
+header{
+    font-size: 23px;
+    font-weight: 700;
+    color: black;
+    text-align: center;
+    margin-left: 25px;
+}
+.remember .span{
+     text-align: left;
+     margin-top: 10px;
+}
+form{
+    margin-top: 30px;
+}
+form .field{
+    position: relative;
+    height:50px;
+    width: 150%;
+    margin-top: 20px;
+    border-radius: 6px;
+}
+.field input,
+.field button{
+    height: 100%;
+    width: 100%;
+}
+.field input{
+    padding: 0 15px;
+    border: 1px solid#CACACA;
+    border-radius: 6px;
+    font-size: medium;
+}
+.eye-icon{
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    font-size: 18px;
+    color: #8b8b8b;
+    cursor: pointer;
+    padding: 5px;
+}
+.field button{
+    color: white;
+    background-color: #0171d3;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+.form-link-1{
+    text-align: center;
+    margin-top: 10px;
+    margin-left: 150px;
+    text-align: center;
+    color: #0171d3;
+}
+.form-link-2{
+    text-align: center;
+    margin-top: 10px;
+}
+.remember .checkbox{
+    margin-top: 10px;
+}
+.form-link span,
+.form-link a{
+    font-size: 14px;
+    font-weight: 400;
+    
+}
+.form a{
+    text-decoration: none;
+    text-align: center;
+}
+.form a:hover{
+    text-decoration: underline;
+}
+.a .span{
+    text-align: center;
+}
+.a .google .span{
+    text-align: center;
+}
+.media-options a{
+    text-align: center;
+    display: flex;
+    background-color:white;
+    border:10px black;
+}
+.media-options a .span{
+    text-align: center;
+}
+a.google{
+    border: 1px solid #CACACA;
+    margin-top: 5%;
+}
+
+img.google-img{
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    transform: translateY(-50%);
+}
+img.google-img{
+    height: 20px;
+    width: 20px;
+    object-fit: cover;
+}
